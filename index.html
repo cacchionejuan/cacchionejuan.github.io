@@ -23,14 +23,14 @@
   <main id="main">
     <section class="hero wrap" id="top">
       <div class="hero-copy">
-        <p class="eyebrow"><i></i> Rosario, Argentina <b>/</b> Open to software engineering</p>
+        <p class="eyebrow"><i></i> Rosario, Argentina <b>/</b> Data systems <b>/</b> Workflow design</p>
         <h1>Juan Ignacio<br><span>Cacchione</span></h1>
-        <p class="role">Data, automation &amp; software integration</p>
-        <p class="intro">I turn operational complexity into useful tools: analytics people can act on, workflows that take less effort, and integrations that connect systems.</p>
-        <div class="actions"><a class="button" href="#work">Explore selected work <span aria-hidden="true">&#8595;</span></a><a class="underlined" href="mailto:cacchionejuan@gmail.com">Email me &#8599;</a></div>
+        <p class="role">I make complex operations easier to act on.</p>
+        <p class="intro">I build data products, workflow automation, and software integrations shaped around how teams actually work.</p>
+        <div class="actions"><a class="button" href="#work">See what I have built <span aria-hidden="true">&#8595;</span></a><a class="underlined" href="mailto:cacchionejuan@gmail.com">Let's talk &#8599;</a></div>
         <ul class="stack"><li>SQL</li><li>Python</li><li>Node.js</li><li>Databricks</li><li>Power BI</li></ul>
       </div>
-      <figure class="hero-art"><img src="assets/architecture.png" width="1120" height="760" alt="Sanitized architecture diagram: assistant to local MCP server to Microsoft Graph and browser workflows"><figcaption><span>01 / SYSTEMS</span><span>Local workflow integration</span></figcaption></figure>
+      <figure class="hero-art"><img src="assets/dashboard-preview.png" width="1120" height="760" alt="Original portfolio concept dashboard with clearly labeled synthetic inventory and availability data"><figcaption><span>PORTFOLIO CONCEPT</span><span>All values are synthetic</span></figcaption></figure>
       <span class="hero-index">PORTFOLIO<br>2026</span>
     </section>
 
@@ -40,14 +40,14 @@
     </div></section>
 
     <section class="work wrap" id="work">
-      <div class="section-heading"><div><p class="eyebrow">A few problems, and how I approached them</p><h2>Selected work<span>.</span></h2></div><p>Business context stays high-level. Visuals use synthetic examples; no employer code or data is published here.</p></div>
+      <div class="section-heading"><div><p class="eyebrow">From manual steps to repeatable decisions</p><h2>Selected work<span>.</span></h2></div><p>Business context stays high-level. Visuals use synthetic examples; no employer code or data is published here.</p></div>
 
       <article class="project">
         <div class="project-copy">
           <p class="project-index">01 <span>Internal project / public summary</span></p>
           <h3>Workflow automation server</h3><p class="lede">Connecting everyday work to the systems behind it.</p>
-          <p>Contributed to the design and iterative development of a local Node.js server using the Model Context Protocol (MCP). It exposes focused tools for Microsoft Graph workflows and browser-based operational tasks, with validated inputs and workflow-specific rules.</p>
-          <dl><div><dt>Role</dt><dd>Workflow design, implementation and validation</dd></div><div><dt>Approach</dt><dd>Local stdio server; Graph API pagination and filtering</dd></div><div><dt>Scope</dt><dd>Internal tool, not a cloud production service</dd></div></dl>
+          <p>Mapped repeated inbox, planning and browser tasks into focused tools on a local Node.js MCP server. I shaped the workflows, tested real use cases and iteratively refined the implementation with AI assistance. The server uses typed inputs and reusable Microsoft Graph helpers for filtering and pagination.</p>
+          <dl><div><dt>My role</dt><dd>Workflow design, requirements and integration testing</dd></div><div><dt>Approach</dt><dd>Local stdio server; Graph API and browser automation</dd></div><div><dt>Boundary</dt><dd>Internal tool, not a hosted backend service</dd></div></dl>
           <ul class="tags"><li>Node.js</li><li>MCP SDK</li><li>Microsoft Graph</li><li>Zod</li><li>Playwright</li></ul>
         </div>
         <figure><img src="assets/architecture.png" width="1120" height="760" loading="lazy" alt="Conceptual flow from an assistant through a local MCP server to Microsoft Graph and browser automation"><figcaption>Conceptual architecture, recreated for this portfolio</figcaption></figure>
@@ -57,8 +57,8 @@
         <div class="project-copy">
           <p class="project-index">02 <span>Analytics engineering</span></p>
           <h3>Large-list SQL filtering</h3><p class="lede">Make a useful query scale with the way people work.</p>
-          <p>For a machine-population analysis, users needed to filter by long lists of part numbers and attributes. I reworked the pattern to normalize input values once and match them through semi-joins, instead of parsing each list for every source row.</p>
-          <dl><div><dt>Design</dt><dd>Split, trim and materialize filter values</dd></div><div><dt>Trade-off</dt><dd>Batch-friendly filtering; no unsupported speed claim</dd></div><div><dt>Output</dt><dd>Parameterized analytics and a self-service dashboard</dd></div></dl>
+          <p>For a machine-population analysis, users needed to filter by long lists of part numbers and attributes. The original per-row list parsing timed out on large inputs. I normalized filter values once and matched them through semi-joins; the same long-list scenario then returned results in seconds.</p>
+          <dl><div><dt>Decision</dt><dd>Split, trim and match filter values as rows</dd></div><div><dt>Result</dt><dd>From a 300-second timeout to seconds on the tested query</dd></div><div><dt>Output</dt><dd>Parameterized analytics and a self-service dashboard</dd></div></dl>
           <ul class="tags"><li>SQL</li><li>Databricks</li><li>Power BI</li><li>Query design</li></ul>
         </div>
         <figure><img src="assets/sql-filtering.png" width="1120" height="760" loading="lazy" alt="Synthetic diagram showing a long filter list transformed into rows and matched through a semi-join"><figcaption>Generic data flow; example values are synthetic</figcaption></figure>
@@ -66,13 +66,24 @@
 
       <article class="project">
         <div class="project-copy">
-          <p class="project-index">03 <span>Operational analytics</span></p>
-          <h3>Inventory decisions, made visible</h3><p class="lede">Turn fragmented reporting into a repeatable review.</p>
-          <p>Built reporting and analysis workflows for parts inventory and dealer operations. The work combines data modeling, SQL and BI to help teams spot availability gaps, excess stock and transfer opportunities, then focus conversations on the next action.</p>
-          <dl><div><dt>Focus</dt><dd>Inventory health and service-level indicators</dd></div><div><dt>Workflow</dt><dd>Refresh, analyze, communicate, follow up</dd></div><div><dt>Principle</dt><dd>Actionable context over dashboard volume</dd></div></dl>
-          <ul class="tags"><li>SQL</li><li>Power BI</li><li>Python</li><li>Data modeling</li></ul>
+          <p class="project-index">03 <span>Reporting automation</span></p>
+          <h3>A repeatable dealer review</h3><p class="lede">From fragmented sources to a meeting-ready action plan.</p>
+          <p>Turned a recurring parts-business review into a repeatable workflow. I mapped the reporting process, defined reusable visuals and output structure, and validated a pipeline that refreshes shared data, computes inventory-health indicators, and generates a presentation for the selected account and division.</p>
+          <dl><div><dt>Challenge</dt><dd>Manual reporting across multiple data sources</dd></div><div><dt>Design</dt><dd>Shared cache, reusable metrics and presentation templates</dd></div><div><dt>Outcome</dt><dd>Single-launch, account-specific review deck</dd></div></dl>
+          <ul class="tags"><li>Python</li><li>SQL</li><li>Databricks</li><li>Power BI</li><li>PowerShell</li></ul>
         </div>
-        <figure><img src="assets/inventory-sample.png" width="1120" height="760" loading="lazy" alt="Illustrative inventory health chart with synthetic values across four categories"><figcaption>Illustrative data only; not an employer report</figcaption></figure>
+        <figure><img src="assets/report-pipeline.png" width="1120" height="760" loading="lazy" alt="Sanitized reporting workflow: refreshed sources, shared cache, reusable analysis, tailored report"><figcaption>Workflow recreated with generic labels and sample data</figcaption></figure>
+      </article>
+
+      <article class="project reverse">
+        <div class="project-copy">
+          <p class="project-index">04 <span>Data architecture</span></p>
+          <h3>Scaling a global machine-population model</h3><p class="lede">Design around the shape of the data, not the timeout.</p>
+          <p>A global machine-population analysis outgrew a single interactive query. I tested a regional processing strategy: deduplicate early, materialize a bridge by region, and keep the reporting model focused on reusable aggregates. This made the scale constraint explicit and gave the next implementation phase a validated path.</p>
+          <dl><div><dt>Constraint</dt><dd>One global interactive query exceeded its execution window</dd></div><div><dt>Decision</dt><dd>Partition work by region and materialize intermediate results</dd></div><div><dt>Next step</dt><dd>Scheduled processing, then aggregate reporting</dd></div></dl>
+          <ul class="tags"><li>Databricks SQL</li><li>Delta</li><li>Power BI</li><li>Data modeling</li></ul>
+        </div>
+        <figure><img src="assets/regional-model.png" width="1120" height="760" loading="lazy" alt="Conceptual data architecture showing regional partitions feeding a deduplicated bridge and aggregate model"><figcaption>Conceptual architecture; regions and values are illustrative</figcaption></figure>
       </article>
     </section>
 
