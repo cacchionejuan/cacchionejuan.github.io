@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f7f4">
+  <meta name="description" content="Juan Ignacio Cacchione builds data products, workflow automation, and software integrations for operational teams.">
+  <title>Juan Ignacio Cacchione | Data, Automation &amp; Software</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Juan Ignacio Cacchione, home">JC<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#work">Selected work</a><a href="#about">About</a><a href="#contact">Contact <span aria-hidden="true">&#8599;</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><i></i> Rosario, Argentina <b>/</b> Open to software engineering</p>
+        <h1>Juan Ignacio<br><span>Cacchione</span></h1>
+        <p class="role">Data, automation &amp; software integration</p>
+        <p class="intro">I turn operational complexity into useful tools: analytics people can act on, workflows that take less effort, and integrations that connect systems.</p>
+        <div class="actions"><a class="button" href="#work">Explore selected work <span aria-hidden="true">&#8595;</span></a><a class="underlined" href="mailto:cacchionejuan@gmail.com">Email me &#8599;</a></div>
+        <ul class="stack"><li>SQL</li><li>Python</li><li>Node.js</li><li>Databricks</li><li>Power BI</li></ul>
+      </div>
+      <figure class="hero-art"><img src="assets/architecture.png" width="1120" height="760" alt="Sanitized architecture diagram: assistant to local MCP server to Microsoft Graph and browser workflows"><figcaption><span>01 / SYSTEMS</span><span>Local workflow integration</span></figcaption></figure>
+      <span class="hero-index">PORTFOLIO<br>2026</span>
+    </section>
+
+    <section class="signal"><div class="wrap signal-inner">
+      <p><strong>5+ years</strong><span>at John Deere</span></p><p><strong>LATAM</strong><span>dealer operations</span></p><p><strong>Data to action</strong><span>across the workflow</span></p>
+      <p class="signal-note">Analytics and internal tools experience; transitioning toward backend engineering.</p>
+    </div></section>
+
+    <section class="work wrap" id="work">
+      <div class="section-heading"><div><p class="eyebrow">A few problems, and how I approached them</p><h2>Selected work<span>.</span></h2></div><p>Business context stays high-level. Visuals use synthetic examples; no employer code or data is published here.</p></div>
+
+      <article class="project">
+        <div class="project-copy">
+          <p class="project-index">01 <span>Internal project / public summary</span></p>
+          <h3>Workflow automation server</h3><p class="lede">Connecting everyday work to the systems behind it.</p>
+          <p>Contributed to the design and iterative development of a local Node.js server using the Model Context Protocol (MCP). It exposes focused tools for Microsoft Graph workflows and browser-based operational tasks, with validated inputs and workflow-specific rules.</p>
+          <dl><div><dt>Role</dt><dd>Workflow design, implementation and validation</dd></div><div><dt>Approach</dt><dd>Local stdio server; Graph API pagination and filtering</dd></div><div><dt>Scope</dt><dd>Internal tool, not a cloud production service</dd></div></dl>
+          <ul class="tags"><li>Node.js</li><li>MCP SDK</li><li>Microsoft Graph</li><li>Zod</li><li>Playwright</li></ul>
+        </div>
+        <figure><img src="assets/architecture.png" width="1120" height="760" loading="lazy" alt="Conceptual flow from an assistant through a local MCP server to Microsoft Graph and browser automation"><figcaption>Conceptual architecture, recreated for this portfolio</figcaption></figure>
+      </article>
+
+      <article class="project reverse">
+        <div class="project-copy">
+          <p class="project-index">02 <span>Analytics engineering</span></p>
+          <h3>Large-list SQL filtering</h3><p class="lede">Make a useful query scale with the way people work.</p>
+          <p>For a machine-population analysis, users needed to filter by long lists of part numbers and attributes. I reworked the pattern to normalize input values once and match them through semi-joins, instead of parsing each list for every source row.</p>
+          <dl><div><dt>Design</dt><dd>Split, trim and materialize filter values</dd></div><div><dt>Trade-off</dt><dd>Batch-friendly filtering; no unsupported speed claim</dd></div><div><dt>Output</dt><dd>Parameterized analytics and a self-service dashboard</dd></div></dl>
+          <ul class="tags"><li>SQL</li><li>Databricks</li><li>Power BI</li><li>Query design</li></ul>
+        </div>
+        <figure><img src="assets/sql-filtering.png" width="1120" height="760" loading="lazy" alt="Synthetic diagram showing a long filter list transformed into rows and matched through a semi-join"><figcaption>Generic data flow; example values are synthetic</figcaption></figure>
+      </article>
+
+      <article class="project">
+        <div class="project-copy">
+          <p class="project-index">03 <span>Operational analytics</span></p>
+          <h3>Inventory decisions, made visible</h3><p class="lede">Turn fragmented reporting into a repeatable review.</p>
+          <p>Built reporting and analysis workflows for parts inventory and dealer operations. The work combines data modeling, SQL and BI to help teams spot availability gaps, excess stock and transfer opportunities, then focus conversations on the next action.</p>
+          <dl><div><dt>Focus</dt><dd>Inventory health and service-level indicators</dd></div><div><dt>Workflow</dt><dd>Refresh, analyze, communicate, follow up</dd></div><div><dt>Principle</dt><dd>Actionable context over dashboard volume</dd></div></dl>
+          <ul class="tags"><li>SQL</li><li>Power BI</li><li>Python</li><li>Data modeling</li></ul>
+        </div>
+        <figure><img src="assets/inventory-sample.png" width="1120" height="760" loading="lazy" alt="Illustrative inventory health chart with synthetic values across four categories"><figcaption>Illustrative data only; not an employer report</figcaption></figure>
+      </article>
+    </section>
+
+    <section class="about" id="about"><div class="wrap about-grid">
+      <div><p class="eyebrow">The through-line</p><h2>Operational context.<br>Engineering curiosity.</h2></div>
+      <div><p>I am an Industrial Engineer and Data Science master's student with experience across production control, global parts planning, analytics and dealer inventory management at John Deere.</p>
+        <p>My software experience is strongest in SQL, Python, Node.js integrations and data products. I am moving toward backend engineering by extending that foundation into service design, testing and maintainable APIs.</p>
+        <dl class="facts"><div><dt>Education</dt><dd>M.S. Data Science, Universidad Austral</dd></div><div><dt>Languages</dt><dd>Spanish (native), English (advanced)</dd></div><div><dt>Based in</dt><dd>Rosario, Argentina</dd></div></dl>
+      </div>
+    </div></section>
+
+    <section class="contact wrap" id="contact"><p class="eyebrow"><i></i> Available for a conversation</p><div class="contact-main"><h2>Let's talk about<br>systems that work.</h2><a href="mailto:cacchionejuan@gmail.com">cacchionejuan@gmail.com &#8599;</a></div><div class="contact-foot"><a href="https://www.linkedin.com/in/juan-cacchione" target="_blank" rel="noreferrer">LinkedIn &#8599;</a><span>Rosario, Argentina</span></div></section>
+  </main>
+  <footer class="wrap footer"><span>Juan Ignacio Cacchione</span><span>All sample visuals use synthetic data.</span><a href="#top">Back to top &#8593;</a></footer>
+</body>
+</html>
